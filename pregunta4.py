@@ -21,7 +21,7 @@ st.set_page_config(
 )
 
 
-df = pd.read_excel("banco_peru_scoring.xlsx")
+df = pd.read_excel(r"banco_peru_scoring.xlsx")
 
 np.random.seed(42)
 
