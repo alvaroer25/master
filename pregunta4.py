@@ -21,7 +21,7 @@ st.set_page_config(
 )
 
 
-df = pd.read_excel(r"banco_peru_scoring.xlsx")
+df = pd.read_excel("banco_peru_scoring.xlsx")
 
 np.random.seed(42)
 
@@ -128,7 +128,6 @@ pipeline_logistico = Pipeline(
         (
             "modelo",
             LogisticRegression(
-                penalty="l2",
                 max_iter=1000,
                 random_state=42
             )
@@ -350,10 +349,6 @@ tasa_default = (
 
 ingreso_promedio = (
     datos["ingreso_mensual"].mean()
-)
-
-saldo_promedio = (
-    datos["saldo_tarjeta"].mean()
 )
 
 
