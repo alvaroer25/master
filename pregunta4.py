@@ -12,7 +12,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_auc_score
 from sklearn.cluster import KMeans
-df = pd.read_excel(r"C:\Users\USUARIO\Desktop\Personal\Estudios\Cibertec\CICLO VIII\Mineria de Datos\Casos\EF\banco_peru_scoring.xlsx")
+df = pd.read_excel(r"banco_peru_scoring.xlsx")
 np.random.seed(42)
 df["edad_cliente"] = np.random.randint(
     21,
