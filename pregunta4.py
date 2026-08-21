@@ -194,17 +194,13 @@ pipeline_rf = Pipeline(
 
 parametros_rf = {
     "modelo__n_estimators": [
-        100,
-        200
+        100
     ],
     "modelo__max_depth": [
-        None,
-        10,
-        20
+        10
     ],
     "modelo__min_samples_split": [
-        2,
-        5
+        2
     ]
 }
 
